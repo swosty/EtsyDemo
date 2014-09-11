@@ -13,10 +13,14 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem "paperclip", "~> 3.0"
 
 
-group :developement, :test do 
+group :developement , :test do 
 	gem 'sqlite3'
 end
 
+group :production do 
+	gem 'pg'
+	gem  'rails_12factor'
+end
 
 gem 'sdoc', '~> 0.4.0' ,  
   group: :doc
