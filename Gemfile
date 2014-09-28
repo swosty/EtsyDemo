@@ -1,3 +1,4 @@
+source 'http://code.stripe.com'
 source 'https://rubygems.org'
 ruby "2.0.0"
 
@@ -14,7 +15,7 @@ gem "paperclip", "~> 3.0"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
-
+gem 'stripe'
 
 group :development , :test do 
 	gem 'sqlite3'
